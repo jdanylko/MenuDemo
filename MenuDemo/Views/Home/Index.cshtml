@@ -1,0 +1,24 @@
+﻿@using MenuDemo.Helpers.Html
+@model MenuDemo.Models.MenuViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<style>
+    .toolbar {
+        padding: 0;
+        outline: 1px solid #CCC;
+        background-color: #DDD;
+    }
+</style>
+
+<h2>Sample Toolbar</h2>
+@Html.Toolbar(Model.MenuItems)
+
+<h2>Sample Vertical Menu</h2>
+@Html.VerticalMenu(Model.MenuItems)
+
+<h2>Sample Horizontal Menu</h2>
+@Html.HorizontalMenu(Model.MenuItems)
+
